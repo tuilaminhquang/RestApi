@@ -7,6 +7,7 @@ from rest_framework import routers
 
 r = routers.DefaultRouter()
 r.register('course', views.CourseViewSet)
+r.register('categories', views.CategoryViewset)
 
 urlpatterns = [
     path('', include(r.urls)),
